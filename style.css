@@ -1,0 +1,15 @@
+body {
+    background-color: #c3e3fd;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+  }
+  h1 {
+    color: #0072C6;
+  }
+  h2 {
+    color: #0072C6;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
