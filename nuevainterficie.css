@@ -1,0 +1,79 @@
+
+.primero {
+    width: 1150px;
+    border-width: 1,25px;
+    border-style: solid;
+    border-color: #A3A3A3;
+}
+
+.titulo_1 {
+    font-size: 1.9em;
+    line-height: 1.2em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 185px;
+
+}
+
+.blog {
+    font-size: 1.9em;
+    line-height: 1.2em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 193px;
+    color: white;
+    margin-top: 22px;
+}
+
+
+.header-site {
+    width: 1800px;
+    height: 124px;
+    background-color: #304B69;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.titulo_apartat{
+
+    margin-top: 267px;
+}
+
+.box_title {
+    width: 1800px;
+    height: 85px;
+    background-color: #6D6D6D;
+    position: absolute;
+    top: 124px;
+    left: 0;
+    
+}
+
+
+.parrafo_uno {
+    
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    color: #555;
+    margin-left: 185px;
+    
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top: 8px;
+   
+
+}
+
+
+.titulo_2 {
+    font-size: 1.6em;
+    line-height: 1.4em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 185px;
+    
+   
+    
+
+
+}
