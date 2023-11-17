@@ -1,99 +1,103 @@
+/* Contenido del archivo style.css */
 
-.primero {
-    width: 1150px;
-    border-width: 1,25px;
-    border-style: solid;
-    border-color: #A3A3A3;
+body {
+    margin-bottom: 0; /* Ajuste para evitar que el contenido se sobresalga por debajo del box */
 }
 
-.titulo_1 {
-    font-size: 1.9em;
-    line-height: 1.2em;
-    font-weight: 600;
-    font-family:'Times New Roman', serif, Courier, monospace ;
-    margin-left: 185px;
-
-}
-
-.blog {
-    font-size: 1.9em;
-    line-height: 1.2em;
-    font-weight: 600;
-    font-family:'Times New Roman', serif, Courier, monospace ;
-    margin-left: 193px;
-    color: white;
-    margin-top: 22px;
-}
-
-
-.header-site {
-    width: 1800px;
-    height: 124px;
-    background-color: #304B69;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.titulo_apartat{
-
+.titulo_apartat {
     margin-top: 267px;
 }
 
-.box_title {
-    width: 1800px;
-    height: 85px;
-    background-color: #6D6D6D;
-    position: absolute;
-    top: 124px;
-    left: 0;
-    
-}
-
-
-.parrafo_uno {
-    
-    font-family:'Times New Roman', serif, Courier, monospace ;
-    color: #555;
+.titulo_1, .blog {
+    font-size: 1.9em;
+    line-height: 1.2em;
+    font-weight: 600;
+    font-family: 'Times New Roman', serif, Courier, monospace;
     margin-left: 185px;
-    
-    font-size: 15px;
-    line-height: 1.5;
-    padding-top: 8px;
-   
-
 }
 
+.blog {
+    color: white;
+    margin-top: 22px;
+}
 
 .titulo_2 {
     font-size: 1.6em;
     line-height: 1.4em;
     font-weight: 600;
-    font-family:'Times New Roman', serif, Courier, monospace ;
+    font-family: 'Times New Roman', serif, Courier, monospace;
     margin-left: 185px;
 }
 
+.parrafo_uno {
+    font-family: 'Times New Roman', serif, Courier, monospace;
+    color: #555;
+    margin-left: 185px;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top: 8px;
+}
 
-.barra {
-    list-style: none;
-    margin-top: 30px;
-    
+.primero {
+    width: 90%;
+    border-width: 1px;
+    margin-left: 5%; /* Nuevo ajuste */
+}
+
+.header-site, .box_title {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; /* Añadido para contener el margen negativo */
+}
+
+.header-site::before {
+    content: "";
+    display: block;
+    height: 124px; /* Ajusta según sea necesario */
+    background-color: #304B69; /* Mismo color que el header */
+    margin-bottom: -124px; /* Nuevo ajuste para eliminar el espacio en blanco */
+}
+
+.box_title {
+    height: 85px;
+    background-color: #6D6D6D;
+    top: 124px;
+    margin-top: 0; /* Nuevo ajuste para eliminar el espacio en blanco */
+}
+
+.navegacion {
+    margin-left: 5%; /* Ajuste para mantener los elementos alineados y respetar el responsive */
+    font-size: 20px;
+    color: white;
+    display: inline; /* Agregado para que la barra sea inline */
+    white-space: nowrap; /* Evitar que los elementos se desborden en pantallas pequeñas */
 }
 
 .barra li {
     display: inline-block;
     margin: 10px;
-
 }
 
-.navegacion {
-    margin-left: 500px;
-    font-size: 20px;
-    
-    
+@media screen and (max-width: 768px) {
+    .navegacion {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .parrafo_uno {
+        font-size: 14px;
+    }
 }
 
-.barra li a {
-    color: white;
-    text-decoration: none;
+.parrafo_uno {
+    padding-top: 0;
 }
+
+/* Nuevas reglas para hr */
+hr.primero {
+    margin-top: 0; /* Nuevo ajuste */
+    margin-left: 185px; /* Nuevo ajuste */
+}
+
