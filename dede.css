@@ -29,7 +29,7 @@ body {
   .nav-item {
     position: relative;
     width: 130px;
-    height: 82px;
+    height: 85px;
     margin: 0;
     background-color: transparent;
     transition: background-color 0.3s, transform 0.3s;
@@ -44,7 +44,7 @@ body {
     width: 100%;
     height: 6px; /* Ajusta la altura del cuadrado rosa */
     background-color: pink; /* Cambia el color del cuadrado rosa si es necesario */
-    top: 82px;
+    top: 85px;
     cursor: pointer;
     
     /* Agrega la propiedad border-top-left-radius para establecer un radio en la esquina superior izquierda */
