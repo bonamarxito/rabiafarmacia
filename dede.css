@@ -7,7 +7,6 @@ body {
     background-color: #f8f4f4;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    
   }
   
   nav {
@@ -18,7 +17,6 @@ body {
     width: fit-content;
     margin-top: 0;
   }
-  
   
   ul {
     list-style-type: none;
@@ -35,8 +33,9 @@ body {
     margin: 0;
     background-color: transparent;
     transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
   }
-
+  
   .nav-item::after {
     content: "";
     position: absolute;
@@ -46,38 +45,42 @@ body {
     height: 6px; /* Ajusta la altura del cuadrado rosa */
     background-color: pink; /* Cambia el color del cuadrado rosa si es necesario */
     top: 82px;
+    cursor: pointer;
+    
+    /* Agrega la propiedad border-top-left-radius para establecer un radio en la esquina superior izquierda */
     
   }
+  
   .red::after {
     background-color: #989494; /* Cambia el color del cuadrado rosa si es necesario */
+    border-bottom-left-radius: 5px;
   }
-
+  
   .orange::after {
     background-color: #e8340c; /* Cambia el color del cuadrado rosa si es necesario */
   }
-
+  
   .yellow::after {
     background-color: #f06c34; /* Cambia el color del cuadrado rosa si es necesario */
   }
-
+  
   .green::after {
     background-color: #e8bc2c; /* Cambia el color del cuadrado rosa si es necesario */
   }
-
+  
   .blue::after {
     background-color: #50ac5c; /* Cambia el color del cuadrado rosa si es necesario */
   }
-
+  
   .indigo::after {
     background-color: #38a4d4; /* Cambia el color del cuadrado rosa si es necesario */
   }
-
+  
   .violet::after {
     background-color: #2054bc; /* Cambia el color del cuadrado rosa si es necesario */
+    border-bottom-right-radius: 5px;
   }
-
-
-
+  
   .red:hover {
     --color: #989494;
   }
@@ -122,8 +125,7 @@ body {
     color: #464646;
   }
   
-
-
-.sube {
-    margin-top: -10px;
-}
+  .sube {
+      margin-top: -10px;
+  }
+  
