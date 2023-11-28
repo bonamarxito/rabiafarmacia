@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f8f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    
+  }
+  
+  nav {
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    margin-top: 0;
+  }
+  
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .nav-item {
+    position: relative;
+    width: 130px;
+    height: 82px;
+    margin: 0;
+    background-color: transparent;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Ajusta la posición del cuadrado rosa */
+    left: 0;
+    width: 100%;
+    height: 6px; /* Ajusta la altura del cuadrado rosa */
+    background-color: pink; /* Cambia el color del cuadrado rosa si es necesario */
+    top: 82px;
+    
+  }
+  .red::after {
+    background-color: #989494; /* Cambia el color del cuadrado rosa si es necesario */
+  }
+
+  .orange::after {
+    background-color: #e8340c; /* Cambia el color del cuadrado rosa si es necesario */
+  }
+
+  .yellow::after {
+    background-color: #f06c34; /* Cambia el color del cuadrado rosa si es necesario */
+  }
+
+  .green::after {
+    background-color: #e8bc2c; /* Cambia el color del cuadrado rosa si es necesario */
+  }
+
+  .blue::after {
+    background-color: #50ac5c; /* Cambia el color del cuadrado rosa si es necesario */
+  }
+
+  .indigo::after {
+    background-color: #38a4d4; /* Cambia el color del cuadrado rosa si es necesario */
+  }
+
+  .violet::after {
+    background-color: #2054bc; /* Cambia el color del cuadrado rosa si es necesario */
+  }
+
+
+
+  .red:hover {
+    --color: #989494;
+  }
+  
+  .orange:hover {
+    --color: #e8340c;
+  }
+  
+  .yellow:hover {
+    --color: #f06c34;
+  }
+  
+  .green:hover {
+    --color: #e8bc2c;
+  }
+  
+  .blue:hover {
+    --color: #50ac5c;
+  }
+  
+  .indigo:hover {
+    --color: #38a4d4;
+  }
+  
+  .violet:hover {
+    --color: #2054bc;
+  }
+  
+  .nav-item:hover {
+    background-color: var(--color);
+  }
+  
+  .nav-item span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 60px;
+    font-family: "Roboto",arial,sans-serif;
+    color: #464646;
+  }
+  
+
+
+.sube {
+    margin-top: -10px;
+}
